@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posturografía Accesible e IA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #fff8e1;
+      border-bottom: 3px solid #d4af37;
+      text-align: center;
+      padding: 30px 10px;
+    }
+    h1 {
+      color: #000;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #d4af37;
+    }
+    .section {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      background-color: #fafafa;
+    }
+    .toggle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      background-color: #fff;
+      border: 1px solid #d4af37;
+      padding: 10px 15px;
+      border-radius: 8px;
+    }
+    .toggle h2 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+    .content {
+      display: none;
+      padding: 10px 0;
+    }
+    .content.active {
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #fff8e1;
+      border-top: 2px solid #d4af37;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Posturografía Accesible e Inteligencia Artificial</h1>
+    <p>El COP como biomarcador cuantitativo para la prevención de caídas</p>
+    <p><strong>Autor:</strong> Italo Campos Montenegro — Académico UVM</p>
+  </header>
+
+  <div class="section">
+    <div class="toggle" onclick="toggleSection('s1')">
+      <h2>1. Tecnología del Center of Pressure (COP)</h2><span>▼</span>
+    </div>
+    <div id="s1" class="content">
+      <p>El Centro de Presión (COP) es el punto donde actúan las fuerzas de reacción durante la postura de pie. Su movimiento continuo refleja el control neuromuscular de la estabilidad.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="toggle" onclick="toggleSection('s2')">
+      <h2>2. Automatización del Análisis con Software (BrainBLoX)</h2><span>▼</span>
+    </div>
+    <div id="s2" class="content">
+      <p>BrainBLoX permite la adquisición, visualización y análisis de datos del COP usando la Wii Balance Board como plataforma de fuerzas accesible y confiable.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="toggle" onclick="toggleSection('s3')">
+      <h2>3. Interacción y Análisis Potenciado por IA</h2><span>▼</span>
+    </div>
+    <div id="s3" class="content">
+      <p>La inteligencia artificial mejora la interpretación clínica del COP, permitiendo predicción de riesgo de caídas, informes automatizados y recomendaciones personalizadas.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="toggle" onclick="toggleSection('s4')">
+      <h2>4. Desafíos Éticos y Profesionales</h2><span>▼</span>
+    </div>
+    <div id="s4" class="content">
+      <p>La IA debe ser supervisada por profesionales, garantizando seguridad, transparencia y equidad en las decisiones clínicas basadas en datos biomecánicos.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Italo Campos Montenegro — Kinesiólogo especialista en Neurorehabilitación</p>
+    <p>Proyecto académico — UVM</p>
+  </footer>
+
+  <script>
+    function toggleSection(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
